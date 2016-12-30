@@ -16,6 +16,6 @@ setup(
     name = u"顺力机械生产派单软件",     
     options = options,     
     zipfile = None, # 不生成zip库文件    
-    console = [{"script": "sljx_dataset.py", "icon_resources": [(0, "sljx.ico")] }],       
+    console = [{"script": "sljx_dataset.py", "icon_resources": [(0, "tigeek.ico")] }],       
     )
 
