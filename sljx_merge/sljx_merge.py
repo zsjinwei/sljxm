@@ -58,6 +58,8 @@ class order_list:
 			#if len(m_row) < 4 and m_row[0]=='' and m_row[1]=='' and m_row[2]=='' and m_row[3]=='':
 			#	break #default null row is finishing to read
 			#print('[%s]  %s' %(curr_row, m_row))
+			if type(m_row[3])==int or type(m_row[3])==float:
+				m_row[3] = str(int(m_row[3])) # avoid to read in a int num
 			m = re.findall(r'(\w*[0-9]+)\w*',m_row[3])
 			if m_row[1]=='' or len(m) <= 0:
 				print("name is null or can't convert %s to num." %m_row[3])
